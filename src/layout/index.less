@@ -1,0 +1,39 @@
+.duya-header {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  box-sizing: border-box;
+
+  &[data-theme='white'] {
+    background-color: #fff;
+    border-bottom: 1px solid;
+  }
+
+  &[data-theme='dark'] {
+    background-color: black;
+    color: #fff;
+  }  
+
+  .theme-box {
+    display: inline-block;
+    margin-left: 16px;
+    height: 26px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+
+.duya-container {
+  min-height: calc(100% - 56px);
+  padding: 16px;
+  box-sizing: border-box;
+
+  &[data-theme='white'] {
+    background-color: #fff;
+  }
+
+  &[data-theme='dark'] {
+    background-color: black;
+    color: #fff;
+  }  
+}
